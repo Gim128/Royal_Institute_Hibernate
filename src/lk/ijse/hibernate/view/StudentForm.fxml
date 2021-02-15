@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="518.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.StudentController">
+   <children>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="27.0" prefHeight="18.0" prefWidth="579.0" text="STUDENT fORM">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="115.0" prefHeight="18.0" prefWidth="28.0" text="ID" />
+      <Label layoutX="37.0" layoutY="185.0" text="Student Name " />
+      <Label layoutX="54.0" layoutY="250.0" text="Address " />
+      <Label layoutX="56.0" layoutY="314.0" text="Contact" />
+      <Label layoutX="63.0" layoutY="378.0" text="DOB " />
+      <Label layoutX="55.0" layoutY="439.0" text="Gender " />
+      <TextField fx:id="txtId" layoutX="202.0" layoutY="120.0" onAction="#searchOnAction" />
+      <TextField fx:id="txtaddress" layoutX="202.0" layoutY="246.0" />
+      <TextField fx:id="txtcontact" layoutX="202.0" layoutY="310.0" />
+      <TextField fx:id="txtdob" layoutX="202.0" layoutY="374.0" />
+      <TextField fx:id="txtGender" layoutX="202.0" layoutY="435.0" />
+      <TextField fx:id="txtname" layoutX="202.0" layoutY="190.0" />
+      <Button fx:id="btnadd" layoutX="448.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnaddOnAxction" text="Add" />
+      <Button fx:id="btnupdate" layoutX="448.0" layoutY="216.0" mnemonicParsing="false" onAction="#btnupdateOnAction" text="update" />
+      <Button fx:id="btnremove" layoutX="448.0" layoutY="272.0" mnemonicParsing="false" onAction="#btnremoveOnAction" text="remove" />
+      <Button fx:id="btnfind" layoutX="448.0" layoutY="323.0" mnemonicParsing="false" onAction="#btnfindOnAction" text="find" />
+   </children>
+</AnchorPane>
